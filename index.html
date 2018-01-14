@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<div class="container clearfix">
+		<div class="top">
+			<div class="box clearfix">
+				<div id="a">4</div>
+				<div>+</div>
+				<div id="b">4</div>
+				<div>=</div>
+				<div id="qwe">?</div>
+				<input type="text" id="valueC" onkeyup="fc()" onkeydown="on('#valueC')" maxlength="2">
+				<span id="spC"></span>
+			</div>
+
+		</div>
+		<div id="arc-box">
+			<div class="container-s"><input type="text" name="" id="valueA" onkeydown="on('#valueA')" onkeyup="fa()" maxlength="1" /><span id="spA"></span>
+				<div class="triangle"></div>
+			</div>
+			<canvas id="arcA"></canvas>
+		</div>
+		<div id="arc-box">
+			<div id="boxb">
+				<input id="valueB" type="text" onkeyup="fb()" onkeydown="on('#valueB')" maxlength="1" /><span id="spB"></span>
+				<canvas id="arcB"></canvas>
+				<div class="triangle"></div>
+			</div>
+		</div>
+		<img class="img" src="img/sprite.png" alt="">
+	</div>
+	<script src="js.js" type="text/javascript"></script>
+</body>
+</html>
